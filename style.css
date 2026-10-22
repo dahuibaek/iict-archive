@@ -490,3 +490,59 @@ body {
     transform: none;
   }
 }
+
+/* 수정 */
+/* 과제 목록 제목 영역 제거 */
+.section-heading {
+  display: none;
+}
+
+/* 과제 목록 영역을 전체 너비로 사용 */
+.projects {
+  width: 100%;
+  padding: 32px 64px 40px;
+}
+
+/* 과제 카드를 세로로 정렬하고 전체 너비 사용 */
+.assignment-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* 각 과제 카드가 가로로 길게 늘어나도록 설정 */
+.assignment-card {
+  width: 100%;
+}
+
+/* 하단 문구를 가운데 정렬 */
+.window-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.coming-soon {
+  margin: 0;
+  text-align: center;
+}
+
+/* 휴대폰 화면 대응 */
+@media (max-width: 700px) {
+  .projects {
+    padding: 28px 24px 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .projects {
+    padding: 24px 16px 30px;
+  }
+}
