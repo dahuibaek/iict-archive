@@ -9,25 +9,117 @@
 </head>
 <body class="page">
 
-  <!-- TODO 2: 이름 -->
-  <h1 class="page-title">백다희의 과제 아카이브</h1>
+  <main class="mac-window">
 
-  <!-- TODO 3: 한 줄 소개 -->
-  <p class="page-description">26-2 정보문화기술입문 p5.js 과제 모음</p>
+    <!-- 맥 스타일 창 상단 -->
+    <header class="window-header">
+      <div class="window-controls" aria-label="창 장식">
+        <span class="window-dot red"></span>
+        <span class="window-dot yellow"></span>
+        <span class="window-dot green"></span>
+      </div>
 
-  <!-- 과제 목록: href 는 과제 폴더 이름과 똑같이 (대소문자까지) -->
-  <ul class="assignment-list">
-    <!-- TODO 4: 과제 1 제목 -->
-    <li class="assignment-card"><a href="assignment1/">Assignment 1: Photo</a></li>
+      <span class="window-title">DAHUI'S ARCHIVE</span>
+      <span class="header-icon">✳</span>
+    </header>
 
-    <!-- TODO 5: 과제 2 제목 -->
-    <li class="assignment-card"><a href="assignment2/">Assignment 2: Random</a></li>
+    <!-- 페이지 소개 -->
+    <section class="hero">
+      <p class="eyebrow">2026-2 SEMESTER</p>
 
-    <!-- (선택) 과제 3을 추가할 때: 아래 줄의 주석을 풀고, assignment3 폴더를 넣는다 -->
-    <li class="assignment-card"><a href="assignment3/">Assignment 3: Button</a></li>
-  </ul>
+      <!-- TODO 2: 이름 -->
+      <h1 class="page-title">백다희의 과제 아카이브<span>.</span></h1>
 
-  <p class="coming-soon">TO BE CONTINUED...</p>
+      <!-- TODO 3: 한 줄 소개 -->
+      <p class="page-description">
+        26-2 정보문화기술입문 p5.js 과제 모음
+      </p>
+
+      <div class="hero-label">
+        <span class="label-dot"></span>
+        MY CREATIVE SPACE
+      </div>
+    </section>
+
+    <!-- 과제 목록 -->
+    <section class="projects">
+      <div class="section-heading">
+        <div>
+          <p class="section-kicker">PROJECT LIBRARY</p>
+          <h2>My Projects</h2>
+        </div>
+        <span class="project-count">01 — 03</span>
+      </div>
+
+      <ul class="assignment-list">
+
+        <!-- TODO 4: 과제 1 제목 -->
+        <li class="assignment-card">
+          <a href="assignment1/" class="assignment-link">
+            <span class="project-number">01</span>
+
+            <span class="project-info">
+              <span class="project-name">Assignment 1 - Photo</span>
+              <span class="project-type">P5.JS / VISUAL ART</span>
+            </span>
+
+            <span class="status completed">
+              <span class="status-dot"></span>
+              COMPLETED
+            </span>
+
+            <span class="card-arrow">↗</span>
+          </a>
+        </li>
+
+        <!-- TODO 5: 과제 2 제목 -->
+        <li class="assignment-card">
+          <a href="assignment2/" class="assignment-link">
+            <span class="project-number">02</span>
+
+            <span class="project-info">
+              <span class="project-name">Assignment 2 - Random</span>
+              <span class="project-type">P5.JS / GENERATIVE ART</span>
+            </span>
+
+            <span class="status completed">
+              <span class="status-dot"></span>
+              COMPLETED
+            </span>
+
+            <span class="card-arrow">↗</span>
+          </a>
+        </li>
+
+        <!-- TODO 6: 과제 3 제목 -->
+        <li class="assignment-card">
+          <a href="assignment3/" class="assignment-link">
+            <span class="project-number">03</span>
+
+            <span class="project-info">
+              <span class="project-name">Assignment 3 - Button</span>
+              <span class="project-type">P5.JS / INTERACTION</span>
+            </span>
+
+            <span class="status completed">
+              <span class="status-dot"></span>
+              COMPLETED
+            </span>
+
+            <span class="card-arrow">↗</span>
+          </a>
+        </li>
+
+      </ul>
+    </section>
+
+    <!-- 하단 문구 -->
+    <footer class="window-footer">
+      <p class="coming-soon">TO BE CONTINUED<span>...</span></p>
+      <p class="footer-note">MADE WITH P5.JS <span>♡</span></p>
+    </footer>
+
+  </main>
 
 </body>
 </html>
