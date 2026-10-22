@@ -124,30 +124,6 @@ body {
   line-height: 1.8;
 }
 
-/* 나만의 작업 공간 표시 */
-.hero-label {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 9px 13px;
-  border: 1px solid #d9eaff;
-  border-radius: 20px;
-  background: rgba(255, 255, 255, 0.8);
-  color: #5b83af;
-  font-size: 9px;
-  font-weight: 800;
-  letter-spacing: 1.3px;
-}
-
-/* 라벨 왼쪽의 작은 파란 점 */
-.label-dot {
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background: #58a8ed;
-  box-shadow: 0 0 0 3px #e1f1ff;
-}
-
 /* 과제 목록 영역 */
 .projects {
   padding: 42px 64px 52px;
@@ -258,14 +234,6 @@ body {
   line-height: 1.5;
   overflow-wrap: anywhere;
   transition: color 0.22s ease;
-}
-
-/* 과제 분류 */
-.project-type {
-  color: #9aabc0;
-  font-size: 9px;
-  font-weight: 700;
-  letter-spacing: 1.2px;
 }
 
 /* 과제 상태 공통 스타일 */
