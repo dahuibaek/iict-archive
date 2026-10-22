@@ -1,0 +1,165 @@
+/* 기본 설정: 여백과 크기 계산 방식을 통일 */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Pretendard", "Noto Sans KR", Arial, sans-serif;
+  color: #183153;
+  background: linear-gradient(135deg, #edf7ff 0%, #f8fbff 55%, #e2f1ff 100%);
+}
+
+/* 페이지 전체: 화면 중앙에 콘텐츠 배치 */
+.page {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 100px 32px 80px;
+}
+
+/* 메인 제목: 크고 선명하게 */
+.page-title {
+  margin: 0 0 16px;
+  color: #174a8b;
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  font-weight: 800;
+  letter-spacing: -1.5px;
+  line-height: 1.25;
+}
+
+/* 소개 문구: 제목보다 부드러운 색상 사용 */
+.page-description {
+  margin: 0 0 48px;
+  color: #6684a6;
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+/* 과제 목록: 기본 목록 기호와 여백 제거 */
+.assignment-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* 과제 카드: 흰색 배경과 둥근 모서리 */
+.assignment-card {
+  overflow: hidden;
+  border: 1px solid #d9eaff;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 6px 20px rgba(48, 111, 177, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease,
+              border-color 0.2s ease;
+}
+
+/* 링크가 카드 전체를 클릭할 수 있도록 설정 */
+.assignment-card a {
+  display: block;
+  position: relative;
+  padding: 25px 56px 25px 26px;
+  color: #24558c;
+  font-size: 1.05rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* 카드 오른쪽에 화살표 표시 */
+.assignment-card a::after {
+  content: "↗";
+  position: absolute;
+  top: 50%;
+  right: 24px;
+  color: #55a9ed;
+  font-size: 1.4rem;
+  transform: translateY(-50%);
+  transition: transform 0.2s ease;
+}
+
+/* 마우스를 올렸을 때 카드가 살짝 올라오도록 설정 */
+.assignment-card:hover {
+  transform: translateY(-4px);
+  border-color: #91caff;
+  box-shadow: 0 12px 28px rgba(48, 111, 177, 0.13);
+}
+
+.assignment-card:hover a {
+  color: #126bc0;
+}
+
+.assignment-card:hover a::after {
+  transform: translate(3px, -50%);
+}
+
+/* 키보드로 링크를 선택했을 때도 구분되도록 설정 */
+.assignment-card a:focus-visible {
+  outline: 3px solid #55a9ed;
+  outline-offset: -4px;
+  border-radius: 18px;
+}
+
+/* 휴대폰 화면에서는 여백과 카드 크기를 줄임 */
+@media (max-width: 600px) {
+  .page {
+    padding: 64px 20px 48px;
+  }
+
+  .page-title {
+    letter-spacing: -1px;
+  }
+
+  .page-description {
+    margin-bottom: 32px;
+    font-size: 0.95rem;
+  }
+
+  .assignment-list {
+    gap: 12px;
+  }
+
+  .assignment-card {
+    border-radius: 14px;
+  }
+
+  .assignment-card a {
+    padding: 22px 48px 22px 20px;
+    font-size: 0.98rem;
+  }
+
+  .assignment-card a::after {
+    right: 18px;
+  }
+}
+
+/* 움직임 최소화 설정을 사용하는 경우 애니메이션 효과 줄이기 */
+@media (prefers-reduced-motion: reduce) {
+  .assignment-card,
+  .assignment-card a::after {
+    transition: none;
+  }
+}
+
+/* 페이지 하단의 마무리 문구 */
+.coming-soon {
+  margin-top: 72px;
+  color: #80b9e8;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-align: center;
+  opacity: 0.85;
+}
+
+/* 휴대폰에서는 위쪽 여백을 조금 줄임 */
+@media (max-width: 600px) {
+  .coming-soon {
+    margin-top: 56px;
+    font-size: 0.75rem;
+    letter-spacing: 2.5px;
+  }
+}
