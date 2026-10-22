@@ -111,11 +111,6 @@ body {
   overflow-wrap: break-word;
 }
 
-/* 제목 끝의 파란 포인트 */
-.page-title span {
-  color: #65b8f3;
-}
-
 /* 한 줄 소개 */
 .page-description {
   margin: 16px 0 24px;
@@ -152,14 +147,6 @@ body {
   font-size: 23px;
   font-weight: 800;
   letter-spacing: -0.8px;
-}
-
-.project-count {
-  padding-bottom: 3px;
-  color: #9aafc7;
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 1px;
 }
 
 /* 기본 목록 표시 제거 */
@@ -344,19 +331,6 @@ body {
 
 .coming-soon span {
   color: #4b9fe9;
-}
-
-/* 하단 제작 정보 */
-.footer-note {
-  margin: 0;
-  color: #a0b1c5;
-  font-size: 9px;
-  font-weight: 700;
-  letter-spacing: 1px;
-}
-
-.footer-note span {
-  color: #6aaee9;
 }
 
 /* 태블릿과 작은 화면에 맞게 여백 조정 */
